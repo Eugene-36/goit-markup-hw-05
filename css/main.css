@@ -15,7 +15,7 @@ html {
   }
 
 body{
- padding-top: 80px; 
+ /* padding-top: 80px;  */
 background-color: var(--white-color);
 color:#757575 ;
 font-family: 'Roboto', sans-serif;
@@ -94,9 +94,8 @@ padding-left: 15px;
 padding-right: 15px;
 }
 .page-header{
-position: fixed;
+/* position: fixed; */
 width: 100%;
-min-height: 80px;
 background: #FFFFFF;
 top: 0;
 z-index: 1;
@@ -236,7 +235,7 @@ position: relative;
 position: absolute;
 width: 370px;
 height: 70px;
-top: 100%;
+top: 89%;
 left: 50%;
 transform: translate(-50%, -50%);
 
@@ -359,6 +358,22 @@ color: var(--accent-color);
 }
 .site-nav .link.current{
 color: var(--accent-color);
+}
+.current::before{
+content: "";
+position: absolute;
+display: block;
+bottom: 0;
+width: 48px;
+height: 4px;
+
+background: #2196F3;
+border-radius: 2px;
+}
+a.link.current.link-underline{
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
 }
 .contact-info .contact-info-color{
 color: rgba(255, 255, 255, 0.6);
