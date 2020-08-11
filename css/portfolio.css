@@ -301,7 +301,7 @@ margin-right: 0;
 margin-bottom: 0px;
 }  
 .without-style{   
-position: relative;    
+/* position: relative;     */
 display: block;
 text-decoration: none; 
 color: #757575;
@@ -318,8 +318,10 @@ position: absolute;
 display: inline-block;
 content: "";
 } */
-
-.text-new-decor{ 
+.box-1 {
+position: relative;
+}
+.box-background { 
 position: absolute;
 width: 100%;
 height: 294px;
@@ -330,11 +332,11 @@ padding: 63px 24px;
 line-height: 1.5;
 letter-spacing: 0.03em;
 
-color: #FFFFFF;
-opacity: 0;   
+color: black;
+opacity: 1;   
 }
- .text-new-decor:hover{
- opacity: 1;  
+ .box-background:hover{
+   
 background: rgba(33, 150, 243, 0.9);   
 } 
 
