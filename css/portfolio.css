@@ -328,8 +328,10 @@ height: 100%;
 padding: 63px 24px;
 line-height: 1.5;
 color: #FFFFFF;
-background-color: var(--accent-color);
+background-color: var(--accent-color); 
 
+transition:  250ms cubic-bezier(0.4, 0, 0.2, 1);
+transform: translateY(-35px);
 opacity: 0;
 }
 .without-style:hover .box-hover{
