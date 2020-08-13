@@ -45,10 +45,9 @@
     <section class="section-hero hero">
     <div class="container">
         <h1 class="section-title-hero">Эффективные решения<br>для вашего бизнеса</h1>
-        <a href="" class="button link-underline ">Заказать услугу</a>
+         <button class="button link-underline" data-modal-open>Заказать услугу</button>
     </div>
     </section>
-
    <!--Список качеств-->  
     <section class="section-qualities color">
         <div class="container bg ">
@@ -386,9 +385,15 @@
 </div>
     </footer>
     
-    <div class="backdrop backdrop-is-hidden">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
+         <button class="btn-apperance" data-modal-close>
+             <svg class="btn-close" >
+                 <use href="./img/symbol-defs-cross.svg#icon-cross-opt"></use>
+             </svg>
+         </button>   
         </div>
     </div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
