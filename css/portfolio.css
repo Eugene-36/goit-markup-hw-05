@@ -139,8 +139,31 @@ margin-right: 10px;
 align-items: center;
 fill: #757575;
 }
-.item:hover svg {
+.site-nav .link:hover, 
+.site-nav .link:focus{
+color: var(--accent-color);
+}
+.site-nav .link{
+transition: color 3000ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.contact-info{
+display: flex;   
+}
+.text-light:focus, .text-light:hover svg {
 fill: #2196F3;
+} 
+.text-light{
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+}
+.text-light:focus, 
+.text-light:hover{
+color: var(--accent-color); 
+}
+.text-light:focus svg{
+fill: #2196F3;
+}
+.text-light svg{
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 .position{
 display: inline-flex; 
@@ -150,7 +173,6 @@ align-items: center;
 .filter{
 display: flex;
 justify-content: center;
-
 }
 .section-main-content{
  padding-top: 94px;
@@ -202,6 +224,7 @@ letter-spacing: 0.03em;
 .button-appearance{
 background-color:var(--bg-color);
 min-width: 73px;
+cursor: pointer;
 border: 1px solid transparent;
 border-radius: 4px;
 text-align: center;
@@ -227,8 +250,9 @@ font-family: Roboto;
 color: var(--white-color);
 background-color: var(--accent-color);
 }
-
-
+.list .button-appearance{
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 /* Работа с секциями (заголовки) */
 .section-title{
 color: var(--head-color);
@@ -427,6 +451,12 @@ border-radius: 50%;
 .style-in:hover{
 background-color:var(--accent-color);
 }
+.style-inst, 
+.style-twit, 
+.style-face, 
+.style-in{
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+}
 .appearance-social{
 width: 20px;
 height: 20px;  
@@ -434,4 +464,7 @@ height: 20px;
 .focus-footer:focus {
 border-radius: 50%;    
 background-color: #2196F3;
+}
+.focus-footer{
+transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);     
 }
