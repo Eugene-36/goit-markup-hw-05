@@ -45,12 +45,9 @@ color: var(--accent-color);
 .text-light:hover{
 color: var(--accent-color);
 }
-
 .color-abyss{
     background: #2F303A;
 }
-
-
 /*Создание основной палитры -основной текст-(#757575)*/
 /*Заголовки у меня цвета:(color: #212121;) h1 цвет(#FFFFFF;),навигация (#212121)*/
 /*h1 цвет(#FFFFFF;)*/
@@ -81,13 +78,12 @@ padding-right: 15px;
 }
 .logo{
 margin-right: 70px;
-    
+font-size: 26px;
+line-height: 1.19;
+  
 color: var(--accent-color);
 font-family: Raleway,cursive;
 font-weight: bold;
-font-size: 26px;
-line-height: 1.19;
-
 }
 .color-logo{
     color: var(--head-color);
@@ -197,28 +193,26 @@ content: "";
 position: absolute;
 display: block;
 left: 0;
-/* top: 0; */
- bottom: 0; 
+bottom: 0; 
 width: 78px;
 height: 4px;
 
 background: #2196F3;
 border-radius: 2px;   
 }
-
 .contact-info .contact-info-color{
 color: rgba(255, 255, 255, 0.6);
 }
 /* Стили для адреса  */
 .link-underline-address{
 font-style: normal;
-text-decoration: none;
-color: var(--white-color);  
+text-decoration: none; 
 font-weight: normal;
 font-size: 14px;
 line-height: 1.7;
 letter-spacing: 0.03em;
 
+color: var(--white-color); 
 }
 /* Кнопки фильтрации */
 .button-appearance{
@@ -294,8 +288,6 @@ line-height: 1.8;
 .flex-element{
 display: flex;
 flex-wrap: wrap;
-/* outline: 1px solid #EEEEEE; */
-/* background-color: violet;  */
 }
 
 .flex-element img{
@@ -332,11 +324,6 @@ box-shadow:
 0px 4px 4px rgba(0,0,0,0.6),
 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
-/* .without-style::before{
-position: absolute;   
-display: inline-block;
-content: "";
-} */
 .img-box{
 position: relative;
 overflow: hidden;    
@@ -349,6 +336,7 @@ width: 100%;
 height: 100%;
 padding: 63px 24px;
 line-height: 1.5;
+
 color: #FFFFFF;
 background-color: var(--accent-color); 
 
@@ -388,6 +376,7 @@ color: var(--white-color);
 display: inline-flex;
 height: 44px;
 width: 44px;
+
 align-items: center;
 justify-content: center;
 }
@@ -406,11 +395,9 @@ display: flex;
 align-items: center;
 margin-top: 20px;
 }
-
 .social a:hover{
 color:var(--accent-color)
 }
-
 .social-network:not(:last-child){
 margin-right: 10px;
 }
@@ -429,11 +416,12 @@ padding-right: 62px;
 border-radius: 4px;
 border: 1px solid transparent;
 
+font-size: 16px;
+line-height: 1.8;
+
 color: var(--white-color);
 background-color: var(--accent-color);
 font-weight: bold;
-font-size: 16px;
-line-height: 1.8;
 }
 .call-to-act{
 color: #FFFFFF;
