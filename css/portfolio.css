@@ -350,6 +350,12 @@ transform: translateY(0);
 .without-style:hover .box-hover{
 opacity: 1;
 }
+.without-style:focus .box-hover{
+    transform: translateY(0);    
+ }
+ .without-style:focus .box-hover{
+    opacity: 1;
+}
 /* Позиционирование подвала */
 .contact-info-new{
 margin-top: 9px;
